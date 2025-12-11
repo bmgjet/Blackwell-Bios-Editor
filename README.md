@@ -5,6 +5,9 @@
 ## Overview
 Blackwell BIOS Editor is a tool for modifying the BIOS of NVIDIA GPUs from the Blackwell architecture. This editor allows you to adjust the power limit of your graphics card, enabling better control over performance and efficiency.
 
+## NOTE
+This is only for 5090 it may work on others. Its just porting the Ampere bios editors code with Blackwells updated power table addresses. I havnt added the checksum calculation code since theres no point saving files when there is no method to bypass falcon cert check on them during flash. That would lead to this being only being used for fake bioses to upload to TPU and waste every ones time so saving wont be enabled.
+
 ## Features
 - Modify power limits of NVIDIA Blackwell GPUs
 - User-friendly interface for BIOS editing
